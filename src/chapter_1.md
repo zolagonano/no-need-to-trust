@@ -1,6 +1,8 @@
-# Chapter 1
-
 The first usable decentralized system ever built was Bitcoin in 2008 by Satoshi Nakamoto. There had been many attempts before that to create digital money, but they failed.
+
+They failed because there were some pieces of the puzzle that they couldn't find at the time. Pieces that, when they came together, made Bitcoin the first truly decentralized digital currency that was both trustworthy and usable.
+
+These missing pieces were a series of new innovations combined with multiple societal movements that led to the creation of Bitcoin and eventually progressed to the Web3 space that we know today.
 
 In 1976, Diffie and Hellman introduced the idea that two parties could communicate securely without sharing a secret key beforehand. This was the foundation of public key cryptography and made later digital money systems possible.
 
@@ -12,13 +14,17 @@ In 1998, Wei Dai, a computer scientist, wanted a system where money could exist 
 
 Around the same time, Nick Szabo expanded on the ideas of b money. He suggested the use of proof of work puzzles to create scarce digital tokens. Each token would be tied to a chain of previous proofs, creating a tamper evident ledger. This was effectively an early blockchain concept. But it also never got implemented and relied on people voluntarily following the rules, since the consensus problem was still unsolved.
 
+All of this happened around the cryptoanarchism and cypherpunk movements, which the next chapter is dedicated to.
+
 Satoshi saw all of these attempts and innovations as the missing pieces of the puzzle for digital trustless money. Satoshi did not invent everything, but they combined cryptography, economics, and distributed computing in a way no one else had. The pieces existed, but no one had solved the double spending problem in a decentralized setting until Bitcoin.
 
 After Bitcoin, many pre existing ideas and innovations were implemented in decentralized systems.
 
-For example, before Solana, verifiable delay functions existed in cryptography research but had not been used to construct blockchain consensus. Solana used them in 2017 to create a cryptographic timestamp of events. This provided a sequential ordering of events without relying on external clocks and reduced coordination overhead in a distributed network.
+In a way, Bitcoin paved the way for new innovations to emerge to fill in the other missing pieces of decentralization. Like virtual machines in Ethereum running smart contract code, decentralizing finance beyond just money and evolving into decentralized applications that can be about anything imaginable.
 
-The main issue that Bitcoin solved was double spending.
+Also, this attention that Bitcoin received led to refunctioning of other cryptographic mechanisms to improve decentralized systems further instead of just copying the exact same mechanism that Bitcoin used. For example, before Solana, verifiable delay functions existed in cryptography research but had not been used to build blockchain consensus. Solana used them in 2017 to create a cryptographic timestamp of events. This provided a sequential ordering of events without relying on external clocks and reduced coordination overhead in a distributed network.
+
+The main issue that Bitcoin solved was double spending. Although the mechanism at the time wasn't perfect, it just needed to work, and it did.
 
 Double spending in digital currencies was a major problem because a digital file can be copied perfectly. If you send someone a digital token, nothing stops you from sending an identical copy to someone else unless a trusted party checks every transaction. Traditional systems solve this by relying on a central ledger managed by a bank. The bank’s ledger decides which transaction is valid and which is rejected.
 
