@@ -1,3 +1,5 @@
+# Chapter 1
+
 The first usable decentralized system ever built was Bitcoin in 2008 by Satoshi Nakamoto. There had been many attempts before that to create digital money, but they failed.
 
 They failed because there were some pieces of the puzzle that they couldn't find at the time. Pieces that, when they came together, made Bitcoin the first truly decentralized digital currency that was both trustworthy and usable.

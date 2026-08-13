@@ -1,3 +1,5 @@
+# Chapter 2
+
 In the world of crypto and Web3, two terms are heard the most: cypherpunk and crypto-anarchism.
 
 Not to be mistaken with cyberpunk, cypherpunk is a fundamentally different thing. Cyberpunk is a science fiction genre, and cypherpunk is a real-world activist movement that centers around cryptography and privacy, and it shares a lot of similarities with crypto-anarchism, a political philosophy that uses cryptography as a tool to create anonymous, censorship-resistant systems that can bypass state power.
