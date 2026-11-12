@@ -43,6 +43,8 @@ Although no voting system is perfect. Token-weighted models are simple but can f
 
 Across all systems, DAOs must balance inclusivity, efficiency, and resilience against attacks like vote buying, Sybil attacks, and manipulation.
 
+But still, it shows how much decentralization has progressed, going from just a decentralized digital currency to running companies purely on blockchains and smart contracts.
+
 ### Compliance Committees and Selective De-Anonymization
 
 Even in fully decentralized systems, there are situations where complete anonymity or unrestricted decision-making can conflict with legal, regulatory, or organizational requirements.
@@ -63,7 +65,7 @@ A compliance committee is a group of people within a DAO tasked with overseeing 
 **Selective De-Anonymization**  
 Some privacy protocols may include features and cryptographic techniques like threshold signature schemes (TSS) to decrypt a transaction upon formal request by a compliance committee.
 
-Using TSS signatures, no single member of a compliance committee can unilaterally decrypt data. A quorum or threshold of committee members must agree, preventing abuse.
+Using TSS signatures, no single member of a compliance committee can unilaterally decrypt data. A minimum number or a threshold of committee members must agree to decrypt a user's data. This can prevent an individual from abusing their power.
 
 Also, the de-anonymization process can be logged and cryptographically verified to ensure transparency and fairness in the decision-making.
 
@@ -98,6 +100,5 @@ Here are some of the most common issues and challenges in DAOs:
 **Composability and Integration Issues**: DAOs that rely on smart contract interactions face challenges when integrating multiple protocols. These dependencies can create fragile links between contracts, increasing the risk of failures or unintended behavior.
 
 **Evolving Governance Needs**: As protocols grow, the governance system that worked for a small community will most likely become inadequate for a larger ecosystem.
-
 
 Despite these challenges, still, DAOs represent a powerful concept in collective governance, but they are not without limitations. Addressing these challenges is critical for DAOs to move forward and become well-established governance structures.
