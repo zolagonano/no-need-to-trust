@@ -20,36 +20,36 @@ When incentives are not in the right place, when trust assumptions are unrealist
 
 Technical safety, personal safety, and economic safety are inseparable in this case. In a decentralized environment, you need all three, because the jungle doesn't care about you. That is the harsh truth, but at least it is a truth.
 
-Here’s your full section rewritten with protective actions added at the end of each point:
-
 ## Wallet and Private Key Security
 
-Your wallet and private keys are the foundation of your crypto security. No matter how secure a protocol or smart contract is, if your keys are exposed, your funds can be stolen. This section covers a few best practices for keeping your keys safe and reducing attack risks.
+Your wallet and private keys are fundamental to your crypto's security. No matter how secure a protocol or smart contract is, if your keys are exposed, your funds can be stolen. This section covers a few best practices for keeping your keys safe and reducing attack risks.
 
 **Hot wallets vs cold wallets**  
-Hot wallets stay connected to the internet, which makes them convenient but exposed to malware, phishing, and remote attacks. It's best to use hot wallets only for small amounts and keep most funds in cold wallets offline.  
-Cold wallets stay offline until you plug them in, so stealing keys usually requires physically getting the device or tricking you into approving a bad transaction. Always verify transactions on the device screen and never connect to untrusted computers.
+Hot wallets stay connected to the internet, which makes them convenient but exposed to malware, phishing, and remote attacks. It's best to use hot wallets only for small amounts and keep most funds in cold wallets offline.
 
-**Seed phrase handling**  
-Your seed phrase _is_ your money. It is the main key that all your other private keys are derived from. Anyone who sees it or photographs it can drain your wallet. Write it down on paper and store it securely offline.  
-Writing it down poorly, storing it in plain text on a device, or taking a screenshot are all common ways people lose funds. Never ever store your seed digitally in cloud storage or screenshots.
+Cold wallets, on the other hand, stay offline until you plug them in, so stealing keys usually requires physically getting the device or tricking you into approving a bad transaction. But you still need to always verify transactions on the device screen and never connect to untrusted computers.
+
+**Seed phrase handling** Your seed phrase _is_ your money. It is the main key that all your other private keys are derived from. Anyone who sees it or photographs it can drain your wallet. Write it down on paper and store it securely offline.
+
+Writing it down poorly, storing it in plain text on a device, or taking a screenshot are all common ways people lose funds. This is why you should never ever store your seed digitally in cloud storage or as screenshots.
 
 **Hardware wallets**  
-Hardware wallets isolate your private keys inside a secure chip. Even if your computer is infected, attackers can’t extract your keys. Buy hardware wallets from trusted sources and verify device authenticity.  
-The main risks come from fake devices, tampered packaging, or approving a malicious transaction on the screen without noticing. Always, always check for tampering and read transactions carefully before approval.
+Hardware wallets isolate your private keys inside a secure chip. Even if your computer is compromised, attackers can’t extract your keys. But still, you need to buy hardware wallets from trusted sources, verify device authenticity, and periodically check for security updates on the firmware.
+
+With hardware wallets, the main risks come from fake devices, tampered packaging, or approving a malicious transaction on the screen without noticing. So it's important to always check for tampering and read transactions carefully before approval.
 
 **Attack surfaces**  
-Clipboard hijackers replace copied addresses. Keyloggers record your passwords. Phishing sites imitate real apps. Malware watches your wallet files. Try to keep devices clean, use password managers, and double-check addresses before sending.
+Clipboard hijackers replace copied addresses. Keyloggers record your passwords. Phishing sites imitate real apps. Malware watches your wallet files. That's why you need to do your best to keep devices clean, use password managers, and double-check addresses before sending.
 
 **Poor device encryption**  
-If your laptop or phone holding wallet files or seed backups does not use strong at-rest encryption, someone who steals or hacks your device can recover your keys. Enable full-disk encryption and strong passwords on all devices storing crypto.
+If your laptop or phone holding wallet files or seed backups does not use strong at-rest encryption, someone who steals or hacks your device can recover your keys. To prevent this, you should encrypt your hard disks with full-disk encryption and strong passwords on all devices that you store your cryptos on.
 
 ## Operational Security (OPSEC)
 
 In crypto, even the best wallets and smart contracts cannot protect you if your day-to-day operations are sloppy. OPSEC is about managing your devices, identities, and online behaviors to minimize exposure to attacks. Practicing good OPSEC helps prevent phishing, malware, and social engineering from compromising your funds.
 
 **Separating identities**  
-Use different emails, usernames, and devices for different roles in crypto. Do not mix real identity with crypto accounts to reduce attack risk.
+To keep your identities separated, best practices are: use different emails, usernames, and devices for different roles in crypto. Do not mix real identity with crypto accounts to reduce attack risk.
 
 **Device hygiene**  
 Keep operating systems updated. Don’t install random browser extensions. Avoid pirated software at all costs. Regularly update and audit software, and avoid untrusted downloads.
@@ -66,24 +66,28 @@ Bragging about holdings paints a target on your back. Best practice is to keep h
 **Social engineering tricks**  
 Fake support chats, “I’ll fix your issue if you send me your seed,” forged transaction screenshots, fake hacks designed to lure you into panic. Never ever share your seed or sign transactions under pressure.
 
+Just doing the above puts you significantly above average in terms of OPSEC and preventing your funds from being stolen.
+
 ## Do Not Get Scammed
+
+We all get scammed sometimes, both because the scammers are so good at what they do and because of our own carelessness and lack of information.
 
 Most of these scams come from lack of research and unfamiliarity with types of scamming schemes that can be performed in the cryptocurrency world. Here are a few:
 
 **Rug pulls**  
-Developers drain liquidity or abandon a project once the token price pumps. Always research teams, check liquidity lock status, and diversify investments. Do not go all in on risky unknown assets.
+In this type of scam, developers drain liquidity or abandon a project once the token price pumps. Always research teams, check liquidity lock status, and diversify investments. Do not go all in on risky unknown assets.
 
 **Exit scams**  
-Teams raise funds, promise future features, then disappear. You should prefer projects with verified histories and transparent roadmaps.
+In exit scams, teams raise funds, promise future features, then disappear. You should prefer projects with verified histories and transparent roadmaps.
 
 **Ponzi protocols**  
-Early users are paid with deposits from new users rather than real economic activity. Avoid schemes promising guaranteed high returns from new participant money. They always collapse.
+In a ponzi, early users are paid with deposits from new users rather than from real economic activity. Avoid schemes promising guaranteed high returns from new participant money. They always collapse.
 
 **Flash loan exploits**  
 Attackers borrow massive amounts of capital instantly and manipulate prices or protocol logic long enough to profit. Be cautious of protocols without sufficient liquidity safeguards and review smart contract security.
 
 **MEV sweeps**  
-MEV (Maximal Extractable Value) bots can reorder or copy your transaction to steal profit. Always use slippage limits, private transactions, or batching techniques to mitigate risk.
+There is a good chance that you might have experienced this: MEV (Maximal Extractable Value) bots can reorder or copy your transaction to steal profit. Always use slippage limits, private transactions, or batching techniques to mitigate risk.
 
 ## Systemic and Protocol-Level Risks
 
@@ -101,6 +105,8 @@ If liquidity dries up, borrowers can exploit insufficient collateral. Monitor co
 **Cross-chain bridge weaknesses**  
 Bridges often hold massive pooled funds and require complex trust assumptions. Best practice is to limit funds on bridges and use audited, well-established bridges.
 
+Using a decentralized protocol also means trusting the code and economic mechanisms behind it. That's why it's so important that, before putting significant funds into a protocol, you research and understand how it works and if it's been 3rd-party audited or not.
+
 ## Application-Level Risks
 
 Application-level risks point to attacks that won't happen on the smart contract level but on the interface you're interacting with.
@@ -114,9 +120,13 @@ Fake wallets steal keys the moment you import your seed phrase. Always use trust
 **Cryptographic implementation bugs**  
 Flawed implementations can leak secret keys. Best you can do is follow projects with audited cryptographic code and community scrutiny.
 
+Security is not only about trusting the protocol itself, but also about trusting the tools you use to access it, because even if the underlying blockchain and smart contracts are secure, the software you use to interact with them can still become the weakest link. Wallets, libraries, websites, and other applications all introduce their own risks.
+
 ## Audit and Security Practices
 
-Audits are really important for the security of a smart contract. Always verify the audits before jumping into something.
+An audit is when an independent security team very carefully reviews a project's code and security practices to make sure they are up to a certain standard.
+
+We aren't all security experts, nor do we have that much time on our hands to audit a protocol ourselves. That's why 3rd-party audit results are the main sources of verifying a protocol's security.
 
 **Code audits**  
 Third-party firms review code for vulnerabilities. But check audit quality and firm reputation before trusting a project.
@@ -136,9 +146,11 @@ Splitting control across keys reduces risk. Use multisig for large wallets to pr
 **Limitations of audits**  
 Audited code can still be unsafe. Always combine audits with personal risk management and awareness.
 
+Security practices like audits and bug bounties can significantly reduce the risk of using a protocol, but none of them can guarantee that a system is safe. But they can increase the chances of safety by a lot.
+
 ## Signs To Watch For Before Going All-In
 
-This type of financial loss typically results from lack of research and patience. It's always the first thing you need to do before jumping into a project or asset, and that is researching as much as possible. Here are some things to watch for, though the list can be much longer than this.
+Financial losses in crypto can often come from jumping into a project without understanding how it works or what risks it carries. Research and patience are some of the most useful tools you have before putting significant money into a project or asset. The following are some important things to look for, although this list is far from complete.
 
 **Suspicious tokenomics**  
 In cases of high emissions or unstable rewards. Always evaluate token distribution and long-term sustainability.
@@ -157,6 +169,8 @@ Some audits are forged. Try your best to verify audit reports yourself directly 
 
 **Unsustainable yields**  
 If yields are too high to be realistic, they probably aren't realistic. Question extremely high returns and understand the source of yield.
+
+Before putting significant money into a project, don't just ask "How much can I make?" Ask "Where does that return come from and what happens if things go wrong?"
 
 ## Behavioral Lessons
 
@@ -179,6 +193,8 @@ Winning early can mislead you. Stay humble and risk only what you can afford to 
 
 **Hype cycles**  
 Social media amplifies trends. Try to separate signal from noise and make rational choices.
+
+Good judgment in crypto is not about never making mistakes. It is about recognizing the situations where emotions can take control of your decisions and learning to slow down before acting.
 
 ## NFT Economics and Security
 

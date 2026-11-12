@@ -22,9 +22,9 @@ And for social media, decentralized social networks give users control over cont
 
 ## Technical Limitations
 
-Decentralized systems are powerful and promise a lot, but they are still evolving. It's better to stay grounded as well.
+Decentralized systems are powerful and promise a lot, but they are still evolving, and there are a lot of technical limitations that need to be solved.
 
-Many challenges remain, and these limitations can affect usability, adoption, and real-world impact. Understanding these technical bottlenecks helps set realistic expectations.
+Many challenges remain, and these limitations can affect usability, adoption, and real-world impact. We need to understand these technical bottlenecks to be able to set realistic expectations.
 
 **Scalability**  
 Most blockchains can only handle a limited number of transactions per second. When network activity spikes, this leads to congestion, higher transaction fees, and slower processing times. For example, Ethereum gas fees can skyrocket during popular NFT drops or DeFi activity. Solutions like sharding, layer-2 protocols, and rollups aim to increase throughput, but these approaches introduce complexity and trade-offs between security, decentralization, and speed.
@@ -126,6 +126,7 @@ Web3 social layers for censorship-resistant communication could transform online
 Decentralized marketplaces and peer-to-peer infrastructure are additional speculative avenues. Future networks might enable users to share bandwidth, storage, energy, or transportation resources in fully trustless, automated systems, governed by smart contracts that ensure fair compensation and security. This could expand the sharing economy, reduce inefficiencies, and democratize access to services.
 
 These speculative applications illustrate the broad societal implications of decentralization. While many are in experimental stages, they still highlight how distributed systems could move beyond financial tools to fundamentally reshape governance, coordination, and human interaction in the digital and physical world.
+
 ## Challenges Ahead
 
 While decentralized systems offer significant potential, their adoption and real-world impact face multiple hurdles. These challenges are not just technical; they span legal, social, economic, and user experience domains. Understanding these barriers is critical for realistic expectations and responsible implementation.
