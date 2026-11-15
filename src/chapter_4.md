@@ -278,4 +278,3 @@ By combining randomized peer connections, cryptographic verification of identiti
 ---
 
 There were a lot of other related concepts on blockchains which were mostly related to blockchains as an infrastructure, which I will cover in a separate chapter. Things like smart contracts, gas, EVMs, and more.
-

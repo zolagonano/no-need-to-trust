@@ -18,7 +18,7 @@ And even if the economics are sound, personal security failures expose users to 
 
 When incentives are not in the right place, when trust assumptions are unrealistic, when token mechanisms create perverse motivations, or when users themselves fail to protect their own keys and information, the system collapses, value evaporates, and losses become irreversible.
 
-Technical safety, personal safety, and economic safety are inseparable in this case. In a decentralized environment, you need all three, because the jungle doesn't care about you. That is the harsh truth, but at least it is a truth.
+Technical safety, personal safety, and economic safety are inseparable in this case. In a decentralized environment, you need all three, because the jungle doesn't care about you. That is the harsh truth, but at least it is a truth. Anyone who has watched Made in Abyss knows how that goes; the deeper you descend, the harder the abyss hits back.
 
 ## Wallet and Private Key Security
 
@@ -29,7 +29,8 @@ Hot wallets stay connected to the internet, which makes them convenient but expo
 
 Cold wallets, on the other hand, stay offline until you plug them in, so stealing keys usually requires physically getting the device or tricking you into approving a bad transaction. But you still need to always verify transactions on the device screen and never connect to untrusted computers.
 
-**Seed phrase handling** Your seed phrase _is_ your money. It is the main key that all your other private keys are derived from. Anyone who sees it or photographs it can drain your wallet. Write it down on paper and store it securely offline.
+**Seed phrase handling**  
+Your seed phrase _is_ your money. It is the main key that all your other private keys are derived from. Anyone who sees it or photographs it can drain your wallet. Write it down on paper and store it securely offline.
 
 Writing it down poorly, storing it in plain text on a device, or taking a screenshot are all common ways people lose funds. This is why you should never ever store your seed digitally in cloud storage or as screenshots.
 

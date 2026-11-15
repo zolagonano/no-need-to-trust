@@ -32,22 +32,25 @@ Economic theory is the method of understanding how people, businesses, and socie
 
 Economic theory provides the tools to design incentives so that participants act in ways that support the network’s goals. Key aspects of economic theory include:
 
-- **Scarcity and Choice**: Resources (time, money, labor, raw materials) are limited, so choices must be made. Economic theory studies how these choices are made and the consequences they produce.
-    
-- **Supply and Demand**: This fundamental concept explains how prices and quantities of goods or services are determined in a market. Prices adjust to balance the desires of consumers with the availability of resources in the market.
-    
-- **Incentives and Behavior**: Economic theory analyzes how individuals and organizations respond to incentives (rewards or punishments) and how those responses affect overall outcomes.
-    
-- **Market Structures**: It looks at different types of markets (perfect competition, monopolies, etc.) and how they influence pricing, production, and efficiency.
-    
-- **Macroeconomic Concepts**: Beyond individual markets, economic theory studies things like unemployment, inflation, economic growth, and the role of government policies.
-    
-- **Models and Assumptions**: Economic theory often uses simplified models to isolate important factors and make predictions.
-    
+**Scarcity and Choice**  
+Resources (time, money, labor, raw materials) are limited, so choices must be made. Economic theory studies how these choices are made and the consequences they produce.
+
+**Supply and Demand**  
+This fundamental concept explains how prices and quantities of goods or services are determined in a market. Prices adjust to balance the desires of consumers with the availability of resources in the market.
+
+**Incentives and Behavior**  
+Economic theory analyzes how individuals and organizations respond to incentives (rewards or punishments) and how those responses affect overall outcomes.
+
+**Market Structures**  
+It looks at different types of markets (perfect competition, monopolies, etc.) and how they influence pricing, production, and efficiency.
+
+**Macroeconomic Concepts**  
+Beyond individual markets, economic theory studies things like unemployment, inflation, economic growth, and the role of government policies.
+
+**Models and Assumptions**  
+Economic theory often uses simplified models to isolate important factors and make predictions.
 
 In decentralized systems, scarcity is enforced programmatically, supply and demand emerge from tokenomics, and incentives are embedded in smart contracts rather than human oversight.
-
----
 
 Economic theory provides a foundational lens for understanding decision-making, resource allocation, and incentives.
 
@@ -63,14 +66,17 @@ The same economic principles still matter in DeFi, but they are expressed throug
 
 For example:
 
-- **Proof-of-Work (PoW)** and **Proof-of-Stake (PoS)** mechanisms: Miners or validators are rewarded economically for contributing resources honestly, and at the same time, misbehavior (e.g., double-spending) is punished.
-    
-- **Tokenomics**: Cryptocurrencies and tokens are structured to align individual incentives with the health of a system.
-    
-- **Game theory**: Models strategic interaction among network participants, anticipating possible attacks or selfish behavior.
-    
-- **Composability incentives**: Participants may move liquidity between protocols, creating emergent economic behaviors that can be harnessed for growth.
-    
+**Proof-of-Work (PoW)** and **Proof-of-Stake (PoS)** mechanisms  
+Miners or validators are rewarded economically for contributing resources honestly, and at the same time, misbehavior (e.g., double-spending) is punished.
+
+**Tokenomics**  
+Cryptocurrencies and tokens are structured to align individual incentives with the health of a system.
+
+**Game theory**  
+Models strategic interaction among network participants, anticipating possible attacks or selfish behavior.
+
+**Composability incentives**  
+Participants may move liquidity between protocols, creating emergent economic behaviors that can be harnessed for growth.
 
 Economic theory helps maintain stability and efficiency in systems where participants have no central authority.
 
@@ -94,14 +100,17 @@ I have said this many times throughout this book: cryptography is the heart of t
 
 Here too, in decentralized economics, cryptographic tools enforce the rules and commitments that economics alone cannot guarantee.
 
-- **Zero-Knowledge Proofs (ZKPs)**: Allow verification of transactions or computations without revealing sensitive data, enabling trustless interactions while preserving privacy.
-    
-- **Secure Multiparty Computation (MPC)**: Lets multiple participants jointly compute a function without exposing private inputs, enabling collaborative economic processes securely.
-    
-- **Digital Signatures and Hash Chains**: Ensure authenticity, integrity, and immutability of transactions, which are essential for enforcing economic rules in public ledgers.
-    
-- **Oracles and cryptographic proofs**: Provide reliable external data to smart contracts, allowing DeFi protocols to respond to real-world events while minimizing manipulation risks.
-    
+**Zero-Knowledge Proofs (ZKPs)**  
+Allow verification of transactions or computations without revealing sensitive data, enabling trustless interactions while preserving privacy.
+
+**Secure Multiparty Computation (MPC)**  
+Lets multiple participants jointly compute a function without exposing private inputs, enabling collaborative economic processes securely.
+
+**Digital Signatures and Hash Chains**  
+Ensure authenticity, integrity, and immutability of transactions, which are essential for enforcing economic rules in public ledgers.
+
+**Oracles and cryptographic proofs**  
+Provide reliable external data to smart contracts, allowing DeFi protocols to respond to real-world events while minimizing manipulation risks.
 
 Cryptography is what provides the technical foundation that allows decentralized economic systems to function securely and reliably.
 
@@ -145,7 +154,7 @@ This is where tokenomics begins to become closely connected to mechanism design.
 
 Tokens can reward actions that benefit the network, such as staking, providing liquidity, or participating in governance. At the same time, protocols can introduce penalties, such as slashing in Proof-of-Stake, to make harmful behavior costly.
 
-The idea is simple: make useful behavior profitable and harmful behavior expensive. This is essentially how most blockchains prevent fraud and encourage good and positive behavior.
+The idea is simple: make useful behavior profitable and harmful behavior expensive. This is essentially how most blockchains prevent fraud and encourage good and positive behavior. Equivalent exchange, as the Fullmetal Alchemist characters would call it; the network only gives back what you put in, and it makes you pay for whatever you break.
 
 ### Utility and Governance
 
@@ -173,8 +182,6 @@ Finally, tokenomics has to consider how the system behaves when things go wrong.
 
 Poorly designed incentives can create opportunities for attacks, manipulation, or economic instability. Examples include flash-loan attacks, price manipulation, bank-run-like liquidity withdrawals, and attacks on governance.
 
----
-
 For example, ETH, the token of Ethereum's blockchain, has several different economic roles within Ethereum. It is used to pay transaction fees, can be staked to help secure the network through Proof-of-Stake, and is affected by mechanisms such as ETH issuance and fee burning. Ethereum's governance, however, is not simply controlled by ETH holders. Major protocol decisions are made through a broader social and technical process involving developers, validators, users, and other participants.
 
 Or in Uniswap, UNI tokens are used to reward liquidity providers, allow governance participation, and distribute protocol revenue, aligning incentives with platform growth.
@@ -191,11 +198,14 @@ For example, a blockchain can reward participants for providing computing power,
 
 Also, there is a lot of emerging research that might one day lead to new innovations which could potentially increase stability and scalability:
 
-- **Cryptoeconomic attacks**: Studying how weaknesses in incentive structures can be exploited and how protocols can be designed to resist them.
-    
-- **Decentralized finance (DeFi)**: Using smart contracts and economic incentives to provide financial services without traditional intermediaries.
-    
-- **Layer 2 scaling solutions**: Using economic incentives and cryptographic proofs to move some activity off-chain while still allowing the underlying blockchain to verify and settle the results.
-    
+**Cryptoeconomic attacks**  
+Studying how weaknesses in incentive structures can be exploited and how protocols can be designed to resist them.
+
+**Decentralized finance (DeFi)**  
+Using smart contracts and economic incentives to provide financial services without traditional intermediaries.
+
+**Layer 2 scaling solutions**  
+Using economic incentives and cryptographic proofs to move some activity off-chain while still allowing the underlying blockchain to verify and settle the results.
 
 Essentially, cryptography helps establish what participants can prove, while economics helps determine why they would follow the rules. Without one, the other alone cannot sustain a secure, functional decentralized system.
+

@@ -102,3 +102,4 @@ Here are some of the most common issues and challenges in DAOs:
 **Evolving Governance Needs**: As protocols grow, the governance system that worked for a small community will most likely become inadequate for a larger ecosystem.
 
 Despite these challenges, still, DAOs represent a powerful concept in collective governance, but they are not without limitations. Addressing these challenges is critical for DAOs to move forward and become well-established governance structures.
+

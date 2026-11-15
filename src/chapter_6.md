@@ -231,3 +231,4 @@ The future is not just about hiding transactions or messages; rather, it is abou
 Privacy will no longer be an optional add-on; it will be built into the foundation of the next generation of decentralized networks because privacy by default increases security for all users, not just those who remember to turn on special features.
 
 Right now, many startups and projects are working on reducing the cost of ZK-Proofs, making interoperability and composability possible while coexisting with privacy.
+
