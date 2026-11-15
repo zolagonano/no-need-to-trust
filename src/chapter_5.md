@@ -4,7 +4,7 @@ Bitcoin had major limitations. Perhaps Satoshi never thought it would blow up th
 
 These limitations are very important since finance is far broader than cash or gold. It includes loans, trading, investments, credit creation, assets, liabilities, insurance, derivatives, and more. If decentralization were to evolve beyond currency and penetrate broader financial systems (or even governance, identity, and digital assets), it needed to become more than a transactional protocol. It had to be a scalable infrastructure capable of executing programmable logic.
 
-This is where Vitalik Buterin’s Ethereum came into play. In 2013, Buterin proposed a new blockchain designed to go beyond the limitations of Bitcoin. Ethereum was crowdfunded in 2014 and launched in 2015, providing a platform for decentralized governance, applications, finance, NFTs, and digital identity. Its goal was ambitious: to create a programmable world computer capable of supporting virtually any decentralized application. And in many ways, it succeeded.
+This is where Vitalik Buterin’s Ethereum came into play. In 2013, Buterin proposed a new blockchain designed to go beyond the limitations of Bitcoin. Ethereum was crowdfunded in 2014 and launched in 2015, providing a platform for decentralized governance, applications, finance, NFTs, and digital identity. Its goal was ambitious: to create a programmable world computer capable of supporting virtually any decentralized application. And in many ways, it succeeded [[1]](./appendix_b.md#additional-resources-for-chapter-5).
 
 Buterin introduced something that had long existed in the world of computers into Ethereum: a virtual machine (VM) named the EVM (Ethereum Virtual Machine).
 
@@ -26,7 +26,7 @@ But that is a full VM. Ethereum's EVM is much smaller than that; it is much clos
 
 This code written in Solidity is called a smart contract, which is self-executing code deployed on the blockchain. The EVM executes smart contracts and ensures deterministic outcomes across all nodes.
 
-This deterministic nature of the EVM is very important for the integrity of the blockchain. And that's what makes it different from a normal VM, because in most VMs, determinism is not guaranteed, but in the EVM, it is.
+This deterministic nature of the EVM is very important for the integrity of the blockchain. And that's what makes it different from a normal VM, because in most VMs, determinism is not guaranteed, but in the EVM, it is [[2]](./appendix_a.md#the-evm-and-gas).
 
 Here is an example of a VirtualBox machine (a VM) vs. the EVM. I know this is not the most relevant comparison because these two are very different, but it helps explain the difference better:
 
@@ -51,7 +51,7 @@ And they receive the same transaction:
 call contract.increment()
 ```
 
-And they all execute the same contract bytecode and follow the same rules because the EVM specifies exactly what every operation means.
+And they all execute the same contract bytecode and follow the same rules because the EVM specifies exactly what every operation means [[3]](./appendix_b.md#additional-resources-for-chapter-5).
 
 ```
 ADD -> addition
@@ -78,11 +78,11 @@ while (true) {
 
 This code is a simple infinite loop that runs forever and takes unlimited CPU and resources.
 
-To solve this problem, Ethereum introduced gas, which puts a limit on computation. A transaction gets a finite gas allowance, so an infinite loop can't run forever. It also makes resource usage costly by making different operations consume different amounts of gas. For example, simple arithmetic is cheap, but reading and writing storage are expensive.
+To solve this problem, Ethereum introduced gas, which puts a limit on computation. A transaction gets a finite gas allowance, so an infinite loop can't run forever. It also makes resource usage costly by making different operations consume different amounts of gas. For example, simple arithmetic is cheap, but reading and writing storage are expensive [[4]](./appendix_a.md#the-evm-and-gas).
 
 This discourages people from filling Ethereum with unnecessarily expensive computation and uses some of that gas to reward the validators who execute the code for the resources involved. Some of that gas is also burned, permanently removing it from circulation.
 
-This burning mechanism was also introduced to prevent malicious validators from creating artificial transactions that increase fees, and it has now been adopted by most modern blockchains that support smart contracts. Burning the fees also makes ETH supply responsive to its usage: the more the network is used, the more ETH is burned, and it may even result in more ETH being burned than issued, which can make it scarcer and more valuable.
+This burning mechanism was also introduced to prevent malicious validators from creating artificial transactions that increase fees, and it has now been adopted by most modern blockchains that support smart contracts. Burning the fees also makes ETH supply responsive to its usage: the more the network is used, the more ETH is burned, and it may even result in more ETH being burned than issued, which can make it scarcer and more valuable [[5]](./appendix_b.md#additional-resources-for-chapter-5).
 
 Essentially, the gas system incentivizes efficient computation and prevents abuse, ensuring that the network is not overwhelmed by infinite loops or excessively complex calculations.
 
@@ -90,7 +90,7 @@ These innovative approaches from Ethereum were very inspiring to other blockchai
 
 I am not going to explain all of these novel non-EVM approaches because that would be out of the scope of this book. But I encourage you to take your time and read about them. They are truly innovative and amazing mechanisms that make a fully scalable decentralized financial system something feasible.
 
-Alongside these new approaches, Ethereum itself has evolved technically as well. At first, it relied on proof-of-work (PoW), similar to Bitcoin, to secure the network. While PoW provided security, it was energy-intensive, slow, and limited scalability. To address these issues, Ethereum transitioned to proof-of-stake (PoS) with the Merge.
+Alongside these new approaches, Ethereum itself has evolved technically as well. At first, it relied on proof-of-work (PoW), similar to Bitcoin, to secure the network. While PoW provided security, it was energy-intensive, slow, and limited scalability. To address these issues, Ethereum transitioned to proof-of-stake (PoS) with the Merge [[6]](./appendix_a.md#proof-of-stake).
 
 PoS heavily reduced energy consumption and allowed validators to secure the network by staking ETH rather than expending computational work. This shift also opened the door for improved scalability, paving the way for layer-2 solutions and future sharding implementations, without compromising decentralization.
 
@@ -244,7 +244,7 @@ NFTs, SBTs, and DIDs collectively serve as bridges between physical reality and 
 
 One challenge with NFTs, SBTs, and DIDs is that blockchain data is public by default. Every token and transaction can be seen, creating potential privacy issues for users who may not want their assets or identity fully exposed.
 
-Zero-knowledge proofs (zk-proofs) provide a solution. Using zk-proofs, it is possible to prove ownership of an NFT, a credential, or an identity without revealing the underlying data. For instance, a user could prove they hold a specific SBT representing a professional certification without revealing their name or the issuing institution. Technical details of zk-proofs will be explained in later chapters.
+Zero-knowledge proofs (zk-proofs) provide a solution. Using zk-proofs, it is possible to prove ownership of an NFT, a credential, or an identity without revealing the underlying data. For instance, a user could prove they hold a specific SBT representing a professional certification without revealing their name or the issuing institution. Technical details of zk-proofs will be explained in later chapters [[7]](./appendix_a.md#zero-knowledge-proof-systems).
 
 NFTs, Soulbound Tokens, and Decentralized IDs expand blockchain’s  potential far beyond money. They allow digital assets to mirror real-life ownership, reputation, and identity, creating a more integrated, programmable world.
 
@@ -289,3 +289,5 @@ Token holders or DAO participants vote on protocol upgrades, parameter changes, 
 Autonomy in blockchain systems exists on a spectrum as well. Full decentralization is idealized, but practical systems must balance control, efficiency, and security to be usable.
 
 Understanding how power and responsibility are distributed helps us see why decentralization is not just a technical problem to solve; rather, it is social, economic, and political.
+
+*Additional resources for this chapter are listed in Appendix B [[8]](./appendix_b.md#additional-resources-for-chapter-5).*

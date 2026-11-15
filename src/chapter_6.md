@@ -68,7 +68,7 @@ From the beginning, Monero used three core ideas:
 - Stealth addresses hid the receiver by generating one-time addresses for each payment.
 - RingCT(Ring Confidential Transactions) hid the amount by proving it was valid without revealing it.
 
-These pieces worked together and gave Monero a baseline that no other major chain had at the time.
+These pieces worked together and gave Monero a baseline that no other major chain had at the time [[1]](./appendix_a.md#moneros-privacy-stack).
 
 The real value came from being private by default because optional privacy always creates a split world. Users who turn it on stand out because they behave differently from the majority. That paradoxically makes them easy to flag and analyze.
 
@@ -76,7 +76,7 @@ Monero understood that well and avoided that. If everyone uses the same privacy 
 
 **The shift toward FCMP++**
 
-Monero has recently moved to FCMP++, which is a major privacy upgrade for Monero. FCMP stands for Full Chain Membership Proofs. Instead of hiding the real input inside a small ring, the proof can treat every unspent output on the chain as a possible decoy. That removes the need to manually choose a handful of decoys and eliminates many of the statistical leaks that ring signatures could not fully avoid. In simpler terms, if before 16 people (the amount in a ring signature) could be responsible for a transaction, now that number is millions.
+Monero has recently moved to FCMP++, which is a major privacy upgrade for Monero. FCMP stands for Full Chain Membership Proofs. Instead of hiding the real input inside a small ring, the proof can treat every unspent output on the chain as a possible decoy. That removes the need to manually choose a handful of decoys and eliminates many of the statistical leaks that ring signatures could not fully avoid. In simpler terms, if before 16 people (the amount in a ring signature) could be responsible for a transaction, now that number is millions [[2]](./appendix_a.md#moneros-privacy-stack).
 
 FCMP++ also improves efficiency compared to earlier designs, which means stronger privacy without painful trade-offs in fees or speed.
 
@@ -92,7 +92,7 @@ Zero-Knowledge-Proofs introduce a new design space where privacy is no longer in
 
 They make it possible to maintain public verifiability while protecting individual data. What once seemed mathematically impossible becomes achievable through carefully constructed proofs that convince the whole network without revealing a single private detail.
 
-At a technical level, ZK-Proofs rely on math to allow one party (the prover) to convince another (the verifier) that a statement is true, without revealing any other information. For example, most systems convert the thing you want to prove into a series of algebraic equations over a finite field. The prover shows that a solution exists, while the verifier can check it quickly without seeing the solution itself.
+At a technical level, ZK-Proofs rely on math to allow one party (the prover) to convince another (the verifier) that a statement is true, without revealing any other information. For example, most systems convert the thing you want to prove into a series of algebraic equations over a finite field. The prover shows that a solution exists, while the verifier can check it quickly without seeing the solution itself [[3]](./appendix_a.md#zero-knowledge-proof-systems).
 
 There are different types of ZK-Proofs and each with its own trade-offs:
 
@@ -110,7 +110,7 @@ I might have really emphasized the importance of privacy by default, but optiona
 
 Zcash is a cryptocurrency (not an infrastructure) launched in 2016 that allows users to choose between transparent and shielded transactions.
 
-Transparent transactions work like Bitcoin. The sender, receiver, and amount are visible on the blockchain. Shielded transactions, on the other hand, use zero-knowledge proofs (specifically zk-SNARKs) to hide transaction details while still proving they are valid.
+Transparent transactions work like Bitcoin. The sender, receiver, and amount are visible on the blockchain. Shielded transactions, on the other hand, use zero-knowledge proofs (specifically zk-SNARKs) to hide transaction details while still proving they are valid [[4]](./appendix_b.md#additional-resources-for-chapter-6).
 
 The optional nature of Zcash means that not every user is automatically private. Users must explicitly choose to send shielded transactions. This makes a split ecosystem where some transactions are fully visible, while others are hidden.
 
@@ -231,4 +231,6 @@ The future is not just about hiding transactions or messages; rather, it is abou
 Privacy will no longer be an optional add-on; it will be built into the foundation of the next generation of decentralized networks because privacy by default increases security for all users, not just those who remember to turn on special features.
 
 Right now, many startups and projects are working on reducing the cost of ZK-Proofs, making interoperability and composability possible while coexisting with privacy.
+
+*Additional resources for this chapter are listed in Appendix B [[5]](./appendix_b.md#additional-resources-for-chapter-6).*
 

@@ -22,7 +22,7 @@ This is certainly one of many proofs that diversity of thought, freedom, being p
 
 In DeFi protocols, incentives are embedded into the protocol itself through tokenomics and smart contracts. There is no central authority enforcing behavior; participants are guided entirely by economic rewards (e.g., yield farming, liquidity mining) or punishments (e.g., slashing in PoS).
 
-Since in DeFi cryptography replaces trusted authorities, smart contracts enforce rules instead, but economic design must anticipate attacks that exploit protocol logic (e.g., flash loan attacks). This is very important because if a protocol is exploited, losses can be immediate, automated, and irreversible. So it also requires extra caution.
+Since in DeFi cryptography replaces trusted authorities, smart contracts enforce rules instead, but economic design must anticipate attacks that exploit protocol logic (e.g., flash loan attacks). This is very important because if a protocol is exploited, losses can be immediate, automated, and irreversible. So it also requires extra caution [[1]](./appendix_a.md#a-field-guide-to-attacks).
 
 ## Decentralized Economics Design
 
@@ -101,10 +101,10 @@ I have said this many times throughout this book: cryptography is the heart of t
 Here too, in decentralized economics, cryptographic tools enforce the rules and commitments that economics alone cannot guarantee.
 
 **Zero-Knowledge Proofs (ZKPs)**  
-Allow verification of transactions or computations without revealing sensitive data, enabling trustless interactions while preserving privacy.
+Allow verification of transactions or computations without revealing sensitive data, enabling trustless interactions while preserving privacy [[2]](./appendix_a.md#zero-knowledge-proof-systems).
 
 **Secure Multiparty Computation (MPC)**  
-Lets multiple participants jointly compute a function without exposing private inputs, enabling collaborative economic processes securely.
+Lets multiple participants jointly compute a function without exposing private inputs, enabling collaborative economic processes securely [[3]](./appendix_a.md#threshold-signatures-and-mpc).
 
 **Digital Signatures and Hash Chains**  
 Ensure authenticity, integrity, and immutability of transactions, which are essential for enforcing economic rules in public ledgers.
@@ -208,4 +208,6 @@ Using smart contracts and economic incentives to provide financial services with
 Using economic incentives and cryptographic proofs to move some activity off-chain while still allowing the underlying blockchain to verify and settle the results.
 
 Essentially, cryptography helps establish what participants can prove, while economics helps determine why they would follow the rules. Without one, the other alone cannot sustain a secure, functional decentralized system.
+
+*Additional resources for this chapter are listed in Appendix B [[4]](./appendix_b.md#additional-resources-for-chapter-8).*
 

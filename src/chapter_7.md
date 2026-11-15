@@ -34,14 +34,14 @@ Although this model has its drawbacks too. Large holders can dominate decisions,
 **Quadratic Voting**  
 Quadratic voting addresses the whale dominance issue by making each additional vote more expensive.
 
-In this system, voting power grows more slowly than the number of tokens a participant spends. This allows minority voices to have a stronger influence. Quadratic voting encourages broader and more diverse participation and reduces the risk of disproportionate control by a few actors.
+In this system, voting power grows more slowly than the number of tokens a participant spends. This allows minority voices to have a stronger influence. Quadratic voting encourages broader and more diverse participation and reduces the risk of disproportionate control by a few actors [[1]](./appendix_b.md#additional-resources-for-chapter-7).
 
 **Conviction Voting**  
 Conviction voting allows participants to lock their tokens over time to signal support for a proposal. The longer tokens are committed, the more influence a vote carries. This system emphasizes on long-term commitment rather than one time voting. This gives projects much more stability and reduces the risk of sudden, manipulative actions.
 
 Although no voting system is perfect. Token-weighted models are simple but can favor wealth concentration. Quadratic and conviction voting encourage participation but require more understanding and engagement.
 
-Across all systems, DAOs must balance inclusivity, efficiency, and resilience against attacks like vote buying, Sybil attacks, and manipulation.
+Across all systems, DAOs must balance inclusivity, efficiency, and resilience against attacks like vote buying, Sybil attacks, and manipulation [[2]](./appendix_a.md#a-field-guide-to-attacks).
 
 But still, it shows how much decentralization has progressed, going from just a decentralized digital currency to running companies purely on blockchains and smart contracts.
 
@@ -65,7 +65,7 @@ A compliance committee is a group of people within a DAO tasked with overseeing 
 **Selective De-Anonymization**  
 Some privacy protocols may include features and cryptographic techniques like threshold signature schemes (TSS) to decrypt a transaction upon formal request by a compliance committee.
 
-Using TSS signatures, no single member of a compliance committee can unilaterally decrypt data. A minimum number or a threshold of committee members must agree to decrypt a user's data. This can prevent an individual from abusing their power.
+Using TSS signatures, no single member of a compliance committee can unilaterally decrypt data. A minimum number or a threshold of committee members must agree to decrypt a user's data. This can prevent an individual from abusing their power [[3]](./appendix_a.md#threshold-signatures-and-mpc).
 
 Also, the de-anonymization process can be logged and cryptographically verified to ensure transparency and fairness in the decision-making.
 
@@ -102,4 +102,6 @@ Here are some of the most common issues and challenges in DAOs:
 **Evolving Governance Needs**: As protocols grow, the governance system that worked for a small community will most likely become inadequate for a larger ecosystem.
 
 Despite these challenges, still, DAOs represent a powerful concept in collective governance, but they are not without limitations. Addressing these challenges is critical for DAOs to move forward and become well-established governance structures.
+
+*Additional resources for this chapter are listed in Appendix B [[4]](./appendix_b.md#additional-resources-for-chapter-7).*
 

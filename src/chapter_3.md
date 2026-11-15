@@ -8,7 +8,7 @@ This began to change in the 1970s when Diffie and Hellman introduced the concept
 
 Transparency is particularly necessary in developing cryptographic algorithms. Algorithms that rely on secrecy to be secure will almost always be broken because they will never have what a transparent cryptographic algorithm has, and that's reviews and improvements from thousands of cryptographers, mathematicians, and crypto-analysts across the globe.
 
-Because of this transparency, it becomes much simpler and easier for developers to implement and use these algorithms in their programs. For example, in the 1990s, Phil Zimmermann released an easy-to-use tool named PGP that offered strong encryption to anyone with a computer. This really challenged the export controls because it showed that governments could not stop an algorithm that could be printed in a book, posted online, or simply reimplemented elsewhere. As soon as PGP gained global attention, the mental barriers that assumed cryptography was not for everyone vanished. PGP spread way faster than any regime or authority could stop it or adapt to it.
+Because of this transparency, it becomes much simpler and easier for developers to implement and use these algorithms in their programs. For example, in the 1990s, Phil Zimmermann released an easy-to-use tool named PGP that offered strong encryption to anyone with a computer. This really challenged the export controls because it showed that governments could not stop an algorithm that could be printed in a book, posted online, or simply reimplemented elsewhere. As soon as PGP gained global attention, the mental barriers that assumed cryptography was not for everyone vanished. PGP spread way faster than any regime or authority could stop it or adapt to it [[1]](./appendix_b.md#additional-resources-for-chapter-3).
 
 The larger consequence was a shift in the cost structure of surveillance. When only authorities possessed strong cryptography, targeted monitoring was straightforward. Once individuals gained access to the same level of protection, the economics changed. Intercepting communications required new methods that were more expensive, more intrusive, or more fragile. In other words, it became functionally impossible. Governments could still try to exploit implementation vulnerabilities, but these strategies did not scale the way passive interception had before.
 
@@ -38,7 +38,7 @@ Because decentralization should shift trust from humans to math and code. The ma
 
 Balancing these two forces is one of the main challenges of building decentralized systems. If everything is transparent, users lose privacy and fall back into the same power dynamics that decentralization was meant to avoid. If everything is private, participants cannot verify the system and it becomes vulnerable to manipulation and abuse.
 
-The goal here is to design mechanisms that let people prove what needs proving without revealing everything about themselves. Techniques like zero-knowledge proofs, multiparty computation, ring signatures, and private key cryptography exist because this balance is essential.
+The goal here is to design mechanisms that let people prove what needs proving without revealing everything about themselves. Techniques like zero-knowledge proofs, multiparty computation, ring signatures, and private key cryptography exist because this balance is essential [[2]](./appendix_a.md#zero-knowledge-proof-systems).
 
 Privacy is not an obstacle to decentralization; it is one of the things that makes decentralization worth pursuing. A decentralized network that exposes all user activity is decentralization in name only. It removes central control but it leaves surveillance intact, it simply shifts the power to whoever has the resources to analyze the data. Real decentralization must protect individuals not just from a central authority, but from any actor seeking to accumulate an unequal amount of data.
 
@@ -52,12 +52,12 @@ Cypherpunks argue that the most effective way to defend freedom in a digital wor
 
 > Cypherpunks write code. We know that someone has to write software to defend privacy, and since we cannot get privacy unless we all do, we are going to write it. We publish our code so that our fellow cypherpunks may practice and play with it. Our code is free for all to use, worldwide. We do not much care if you do not approve of the software we write. We know that software cannot be destroyed and that a widely dispersed system cannot be shut down.
 > 
-> - A Cypherpunk's Manifesto
+> - A Cypherpunk's Manifesto [[3]](./appendix_b.md#additional-resources-for-chapter-2)
 >     
 
 A cryptographic protocol does not require belief in the good intentions of a government or a regulator. It requires only that the underlying assumptions hold and that the code is open for anyone to examine. When the system is transparent and the constraints are built into the protocol, the result is predictability that law never provides. This way Misconduct of those laws and contracts becomes technically impossible rather than illegal.
 
-Examples of this approach are everywhere in modern privacy and security tools. for example Tor routes traffic through many nodes with layered encryption so no one can trace who is speaking to whom. PGP lets individuals encrypt messages without relying on a central authority. Zcash and Monero provide financial privacy through cryptography. Signal uses forward secrecy to make sure intercepted messages cannot be decrypted. And most famously Bitcoin that created a monetary system where the consensus rules govern the ledger, not a bank.
+Examples of this approach are everywhere in modern privacy and security tools. for example Tor routes traffic through many nodes with layered encryption so no one can trace who is speaking to whom. PGP lets individuals encrypt messages without relying on a central authority. Zcash and Monero provide financial privacy through cryptography. Signal uses forward secrecy to make sure intercepted messages cannot be decrypted. And most famously Bitcoin that created a monetary system where the consensus rules govern the ledger, not a bank [[4]](./appendix_b.md#additional-resources-for-chapter-3).
 
 These tools succeed because they do not rely on promises. They rely on math and code, and in these technologies math is sound and code is law.
 
@@ -93,7 +93,7 @@ Cryptography has never been a neutral matter. Its ability to shift power from go
 
 Like what happened in the drug wars in the US, when psychedelic substances became a symbol of counterculture movement and the government saw it as the political threat, they immediately declared wars on all drugs. The same has happened with cryptography, but it's been way harder to control algorithms than substances.
 
-Phil Zimmermann’s PGP being one of the examples. PGP made strong encryption widely available, immediately triggering alarm at the U.S. government. The Clipper Chip, a government-backed encryption device, proposed mandatory key escrow, allowing authorities to decrypt communications at will. These conflicts made clear that encryption was not just a technical tool; it was a challenge to government power.
+Phil Zimmermann’s PGP being one of the examples. PGP made strong encryption widely available, immediately triggering alarm at the U.S. government. The Clipper Chip, a government-backed encryption device, proposed mandatory key escrow, allowing authorities to decrypt communications at will. These conflicts made clear that encryption was not just a technical tool; it was a challenge to government power [[5]](./appendix_b.md#additional-resources-for-chapter-3).
 
 This battle continues today. Governments and regulators push companies to weaken or bypass end-to-end encryption, claiming they need access to private communications to fight crime or terrorism. Efforts to regulate stablecoins, ban transaction mixers, and delist privacy coins from exchanges are all attempts to bring decentralized finance under legal control.
 
@@ -114,3 +114,5 @@ Trustless systems exist because they replace trust in governments or institution
 Encryption gives individuals the power to communicate privately, transact securely, and assert control over their own identity.
 
 This proves that cryptography is the engine and that keeps these systems running. Blockchains, tokens, and networks are tools built on top of it, but they are strong only because encryption enforces rules without relying on permission.
+
+*Additional resources for this chapter are listed in Appendix B [[6]](./appendix_b.md#additional-resources-for-chapter-3).*

@@ -4,7 +4,7 @@ In the world of crypto and Web3, two terms are heard the most: cypherpunk and cr
 
 Not to be mistaken with cyberpunk, cypherpunk is a fundamentally different thing. Cyberpunk is a science fiction genre, and cypherpunk is a real-world activist movement that centers around cryptography and privacy, and it shares a lot of similarities with crypto-anarchism, a political philosophy that uses cryptography as a tool to create anonymous, censorship-resistant systems that can bypass state power.
 
-Both come from manifestos written by Eric Hughes and Timothy C. May, years before Bitcoin existed. Their ideas inspired the movement to build trustless, decentralized, and private tools, long before Web3 became capitalized by web3 companies and VCs.
+Both come from manifestos written by Eric Hughes and Timothy C. May, years before Bitcoin existed [[1]](./appendix_b.md#additional-resources-for-chapter-2). Their ideas inspired the movement to build trustless, decentralized, and private tools, long before Web3 became capitalized by web3 companies and VCs.
 
 These ideas did not appear from nowhere. They grew from decades of technical research and political concerns in the 1970s and 1980s. Privacy was seen not just as a legal issue but as a problem that could be solved with engineering.
 
@@ -39,3 +39,5 @@ Bitcoin is just an example of what this movement led to. There has been an inten
 All of these have roots in the cypherpunk and crypto-anarchist ideologies because those ideologies addressed what was wrong. They resonated with many people for a good reason. At the time, privacy, surveillance, and government overreach were real concerns and still are.
 
 These movements and ideologies are as important, if not more important, than Bitcoin and the entire decentralized ecosystem we have built. They anchor everything in the right direction, like a reminder that it was never about making money from leveraged trading on Binance or Coinbase. They show us the bigger picture so we can follow it and reach that destination.
+
+*Additional resources for this chapter are listed in Appendix B [[2]](./appendix_b.md#additional-resources-for-chapter-2).*

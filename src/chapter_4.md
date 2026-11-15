@@ -35,26 +35,26 @@ There are a lot of different consensus mechanisms and they get more and more inn
 **Proof of Work**  
 Computers compete to solve a hard math puzzle (usually using hash functions or KDFs). The winner earns the right to add the block. This uses a large amount of electricity. The high cost is what discourages bad actors. The whole process of solving and submitting these math puzzles is called mining.
 
-Bitcoin was the first successful cryptocurrency that used Proof of Work using a normal checksum hash function like SHA256. These days KDFs and custom hash functions are preferred for PoW systems because of the ASIC devices.
+Bitcoin was the first successful cryptocurrency that used Proof of Work using a normal checksum hash function like SHA256. These days KDFs and custom hash functions are preferred for PoW systems because of the ASIC devices [[1]](./appendix_a.md#proof-of-work).
 
 ASICs (Application-Specific Integrated Circuits) are chips built to do one thing extremely efficiently, and in the case of PoW, the hashing function PoW mining.
 
 This leads to centralization of mining power, which weakens the network since big players can afford farms of ASIC devices and gain a lot of mining power, making the network more prone to 51% attacks.
 
-51% attacks happen when a single miner or group controls most of the network's power, allowing them to rewrite recent transactions or double-spend coins. 
+51% attacks happen when a single miner or group controls most of the network's power, allowing them to rewrite recent transactions or double-spend coins [[2]](./appendix_a.md#a-field-guide-to-attacks). 
 
 KDFs (Key Derivation Functions) are essentially hash functions but more computationally expensive to perform. They make calculating PoW puzzles memory or computation-heavy in ways that limit ASIC advantages, helping keep mining more accessible and the network more decentralized.
 
-An example of this being Litecoin that used the scrypt KDF algorithm instead of standard checksum hash functions, which requires RAM to calculate, and RAM is not something that an ASIC-like device can bypass. Making it much more expensive and much more fair for everyone else mining Litecoin.
+An example of this being Litecoin that used the scrypt KDF algorithm instead of standard checksum hash functions, which requires RAM to calculate, and RAM is not something that an ASIC-like device can bypass. Making it much more expensive and much more fair for everyone else mining Litecoin [[3]](./appendix_a.md#hash-functions-and-kdfs).
 
 **Proof of Stake**  
 Participants lock up (stake) some of their own coins to earn the right to validate other blocks on the blockchains. Validators are selected to propose or confirm new blocks based on the amount of stake they hold and sometimes randomization.
 
-If they validate fraudulent or incorrect data, part or all of their staked coins can be confiscated (slashing). This makes cheating financially expensive without needing to rely on cryptographic puzzles and computational power.
+If they validate fraudulent or incorrect data, part or all of their staked coins can be confiscated (slashing). This makes cheating financially expensive without needing to rely on cryptographic puzzles and computational power [[4]](./appendix_a.md#proof-of-stake).
 
 Because PoS doesn't rely on solving complex problems, it uses far less energy than PoW. However, wealthier participants naturally have more influence, which can centralize control over block production.
 
-PoS is not perfect and it also introduces new potential attacks like long-range attacks, nothing-at-stake behavior, and validator collusion, which require additional mechanisms such as finality gadgets or checkpointing to mitigate.
+PoS is not perfect and it also introduces new potential attacks like long-range attacks, nothing-at-stake behavior, and validator collusion, which require additional mechanisms such as finality gadgets or checkpointing to mitigate [[5]](./appendix_a.md#proof-of-stake).
 
 Long-range attacks happen when an attacker tries to rewrite old blocks using previously staked coins.
 
@@ -95,7 +95,7 @@ This way, nodes can verify transaction order quickly without waiting for traditi
 
 The main limitation of PoH is that it does not prevent malicious block proposals on its own; it still relies on PoS or another consensus mechanism to finalize blocks.
 
-For example, in Solana, PoH orders transactions while PoS validators confirm blocks and maintain network integrity.
+For example, in Solana, PoH orders transactions while PoS validators confirm blocks and maintain network integrity [[6]](./appendix_a.md#proof-of-history).
 
 ---
 
@@ -119,7 +119,7 @@ A hash function takes any input and produces a fixed-size output called a hash. 
 
 A good hash function for a blockchain consensus should be something that nodes can calculate at high speed but it wouldn't be too fast to calculate for malicious actors, and it shouldn't produce the same output with different inputs.
 
-This means hash functions are one-way, collision-resistant, tamper-proof (Avalanche Effect), and fast to compute.
+This means hash functions are one-way, collision-resistant, tamper-proof (Avalanche Effect), and fast to compute [[7]](./appendix_a.md#hash-functions-and-kdfs).
 
 These properties allow blockchains to link blocks together through block headers. Each block includes the hash of the previous block. Any attempt to alter past data produces a different hash, which breaks the entire chain. This makes tampering obvious to all nodes.
 
@@ -154,11 +154,11 @@ Because of the amount of reliance and relevance of public key cryptography in th
 
 Different blockchains use different elliptic curves depending on their security goals, performance needs, and signature schemes.
 
-For example, secp256k1 is used by Bitcoin, Ethereum, Litecoin, Dogecoin, and most early blockchains. It is paired with ECDSA signatures. Its main advantage is simplicity and widespread support.
+For example, secp256k1 is used by Bitcoin, Ethereum, Litecoin, Dogecoin, and most early blockchains. It is paired with ECDSA signatures. Its main advantage is simplicity and widespread support [[8]](./appendix_a.md#signature-schemes).
 
-Solana, Cardano, Polkadot, Algorand, and many newer chains use Ed25519. It provides faster signature verification, stronger default security properties, and is less error-prone for developers. It uses the EdDSA signature scheme.
+Solana, Cardano, Polkadot, Algorand, and many newer chains use Ed25519. It provides faster signature verification, stronger default security properties, and is less error-prone for developers. It uses the EdDSA signature scheme [[9]](./appendix_a.md#signature-schemes).
 
-We know that these elliptic curve schemes are prone to post-quantum attacks and will eventually be broken if quantum computers advance enough. Because of that, several blockchains and research networks are experimenting with quantum-resistant signature systems.
+We know that these elliptic curve schemes are prone to post-quantum attacks and will eventually be broken if quantum computers advance enough. Because of that, several blockchains and research networks are experimenting with quantum-resistant signature systems [[10]](./appendix_a.md#a-short-note-on-post-quantum).
 
 But post-quantum signatures are not yet mainstream because they require much more storage, more bandwidth, and far more complex key management, which is not simply worth implementing at the time.
 
@@ -181,7 +181,7 @@ So the old coins are permanently marked as spent, and the new ones become availa
 
 The UTXO model is mostly used in early blockchains like Bitcoin, Litecoin, and most Bitcoin forks.
 
-The UTXO model is very simple and straightforward, and easy to verify, but building smart contracts is harder because state must be represented as UTXOs. Privacy is also limited because spending patterns reveal links.
+The UTXO model is very simple and straightforward, and easy to verify, but building smart contracts is harder because state must be represented as UTXOs. Privacy is also limited because spending patterns reveal links [[11]](./appendix_a.md#utxo-vs-accounts-technical-notes).
 
 **Account Model**  
 To fix the problems of the UTXO model, people came up with the account model. The account model keeps a global map of accounts, where each account has a balance and possibly contract code and storage. Transactions directly modify these balances and storage entries.
@@ -196,7 +196,7 @@ Smart contracts are easier to write, it provides a natural way to express shared
 
 In Accounts model, a smart contract can have its own balance, code, and storage, and transactions can modify that storage over time. This makes applications with complex, persistent state much more natural to build.
 
-But one of the problems with the account model is that it’s harder to parallelize and it introduces more complex gas and storage accounting. If two transactions modify the same account or storage location, they cannot always be executed independently.
+But one of the problems with the account model is that it’s harder to parallelize and it introduces more complex gas and storage accounting. If two transactions modify the same account or storage location, they cannot always be executed independently [[12]](./appendix_a.md#utxo-vs-accounts-technical-notes).
 
 I will walk through these concepts like gas and smart contracts in the next chapter.
 
@@ -213,7 +213,7 @@ In P2P networks, nodes connect directly to each other instead of relying on a ce
 
 A P2P network always has these key elements:
 
-**Discovery:** Nodes must find peers to connect to. Chains use bootstrapping methods such as DNS seeds, hardcoded nodes, or peer advertisement protocols.
+**Discovery:** Nodes must find peers to connect to. Chains use bootstrapping methods such as DNS seeds, hardcoded nodes, or peer advertisement protocols [[13]](./appendix_a.md#p2p-networking-internals).
 
 **Random connections:** Nodes connect to several peers chosen at random. This prevents attackers from controlling information flow.
 
@@ -223,7 +223,7 @@ One of the protocols that is used is the gossip protocol. Blockchains use gossip
 
 But gossip also creates overhead because the same data travels multiple times. Efficient gossip protocols add techniques like inventory messages, compression, and deduplication to reduce bandwidth.
 
-Another tool used by many blockchains and other decentralized systems is libp2p, a modular networking stack originally developed by the IPFS team.
+Another tool used by many blockchains and other decentralized systems is libp2p, a modular networking stack originally developed by the IPFS team [[14]](./appendix_b.md#additional-resources-for-chapter-4).
 
 Libp2p provides a framework for building P2P networks, handling:
 
@@ -268,7 +268,7 @@ Every network has security issues and it's the same for decentralized networks, 
     
 - Sybil attacks: An attacker introduces many fake nodes to manipulate peer selection.
     
-- Partitioning attacks: Network splits can cause temporary forks and inconsistent views.
+- Partitioning attacks: Network splits can cause temporary forks and inconsistent views [[15]](./appendix_a.md#a-field-guide-to-attacks).
     
 
 Mitigating these attacks is really important for the integrity and security of the system.
@@ -278,3 +278,5 @@ By combining randomized peer connections, cryptographic verification of identiti
 ---
 
 There were a lot of other related concepts on blockchains which were mostly related to blockchains as an infrastructure, which I will cover in a separate chapter. Things like smart contracts, gas, EVMs, and more.
+
+*Additional resources for this chapter are listed in Appendix B [[16]](./appendix_b.md#additional-resources-for-chapter-4).*

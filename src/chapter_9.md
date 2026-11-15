@@ -30,7 +30,7 @@ Hot wallets stay connected to the internet, which makes them convenient but expo
 Cold wallets, on the other hand, stay offline until you plug them in, so stealing keys usually requires physically getting the device or tricking you into approving a bad transaction. But you still need to always verify transactions on the device screen and never connect to untrusted computers.
 
 **Seed phrase handling**  
-Your seed phrase _is_ your money. It is the main key that all your other private keys are derived from. Anyone who sees it or photographs it can drain your wallet. Write it down on paper and store it securely offline.
+Your seed phrase _is_ your money. It is the main key that all your other private keys are derived from. Anyone who sees it or photographs it can drain your wallet. Write it down on paper and store it securely offline [[1]](./appendix_b.md#additional-resources-for-chapter-9).
 
 Writing it down poorly, storing it in plain text on a device, or taking a screenshot are all common ways people lose funds. This is why you should never ever store your seed digitally in cloud storage or as screenshots.
 
@@ -85,10 +85,10 @@ In exit scams, teams raise funds, promise future features, then disappear. You s
 In a ponzi, early users are paid with deposits from new users rather than from real economic activity. Avoid schemes promising guaranteed high returns from new participant money. They always collapse.
 
 **Flash loan exploits**  
-Attackers borrow massive amounts of capital instantly and manipulate prices or protocol logic long enough to profit. Be cautious of protocols without sufficient liquidity safeguards and review smart contract security.
+Attackers borrow massive amounts of capital instantly and manipulate prices or protocol logic long enough to profit. Be cautious of protocols without sufficient liquidity safeguards and review smart contract security [[2]](./appendix_a.md#a-field-guide-to-attacks).
 
 **MEV sweeps**  
-There is a good chance that you might have experienced this: MEV (Maximal Extractable Value) bots can reorder or copy your transaction to steal profit. Always use slippage limits, private transactions, or batching techniques to mitigate risk.
+There is a good chance that you might have experienced this: MEV (Maximal Extractable Value) bots can reorder or copy your transaction to steal profit. Always use slippage limits, private transactions, or batching techniques to mitigate risk [[3]](./appendix_a.md#a-field-guide-to-attacks).
 
 ## Systemic and Protocol-Level Risks
 
@@ -142,7 +142,7 @@ Mathematically proving smart contract logic behaves as intended. Prioritize form
 Users can buy coverage against exploits. Consider coverage, but always read fine print on limitations.
 
 **Multisig setups and custody models**  
-Splitting control across keys reduces risk. Use multisig for large wallets to prevent single-point failure.
+Splitting control across keys reduces risk. Use multisig for large wallets to prevent single-point failure [[4]](./appendix_a.md#threshold-signatures-and-mpc).
 
 **Limitations of audits**  
 Audited code can still be unsafe. Always combine audits with personal risk management and awareness.
@@ -219,3 +219,5 @@ Most NFTs cannot be sold quickly. Always assess liquidity before investing and a
 ---
 
 If you are interested in improving your OPSEC and security, you should start reading more in depth about this stuff. I also have a book named "A Ninja's Handbook," which is about privacy, security, and anonymity online, and the context might be helpful. Also, there are a lot more in-depth guides on the internet which you can find.
+
+*Additional resources for this chapter are listed in Appendix B [[5]](./appendix_b.md#additional-resources-for-chapter-9).*
