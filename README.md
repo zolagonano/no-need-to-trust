@@ -4,7 +4,7 @@ A human-written book about decentralizing the money, the internet, and everythin
 
 **[Read it online](https://zola.ink/no-need-to-trust/)**
 
-<center>![Book's cover image](./book_cover/cover.png)</center>
+<center><img alt="Book's cover image" src="./book_cover/cover.png"></center>
 
 ## Why "No Need to Trust"
 
