@@ -4,6 +4,8 @@ A human-written book about decentralizing the money, the internet, and everythin
 
 **[Read it online](https://zola.ink/no-need-to-trust/)**
 
+<center>![Book's cover image](./book_cover/cover.png)</center>
+
 ## Why "No Need to Trust"
 
 Because that is exactly what decentralization changed. We no longer have to rely on authorities with our data, money, identity, or votes; we rely on systems backed by cryptographic mathematics, which turned out to be far more reliable than human controlled institutions.
